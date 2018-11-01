@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Svandis Sources Manager Options</title>
+    <link rel="stylesheet" href="css/milligram.min.css">
+    <link rel="stylesheet" href="css/options.css">
+</head>
+<body>
+
+<div class="container">
+    <h3>Svandis Sources Manager</h3>
+    <div id="login-form">
+        <form action="#" method="POST" id="login">
+            <div class="row">
+                <p class="column column-25">
+                    <label for="id-email">Email:</label>
+                    <input type="text" name="email" id="id-email">
+                </p>
+                <p class="column column-25">
+                    <label for="id-password">Password:</label>
+                    <input type="password" name="password" id="id-password">
+                </p>
+            </div>
+            <div class="row">
+                <p class="column">
+                    <button class="submit">LogIn</button>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <div id="token-info">
+        <div class="row">
+            <p class="column column-50">
+                <label for="">JWT Token</label>
+                <input type="text" name="" id="auth-token">
+            </p>
+        </div>
+        <div class="row">
+            <p class="column column-50">
+                <label for="">Refresh Token</label>
+                <input type="text" name="" id="refresh-token">
+            </p>
+        </div>
+        
+        <div class="row">
+            <p class="column">
+                <button id="regenerate-token">Regenerate Token</button>    
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="popup">
+    <h3>some</h3>
+</div>
+
+<script src="js/jquery.custom.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/options.js"></script>
+</body>
+</html>

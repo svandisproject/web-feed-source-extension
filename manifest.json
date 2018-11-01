@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "Svandis Source Manager",
+    "version": "0.1",
+    "description": "",
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "img/logo.png"
+    },
+    "background": {
+        "scripts": ["js/jquery.custom.min.js", "js/background.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "storage",
+        "notifications",
+        "contextMenus",
+        "cookies",
+        "*://*.svandis.io/",
+        "http://*/*",
+        "https://*/*",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["js/jquery.custom.min.js", "js/sweetalert.min.js", "js/content.js"],
+            "css": ["css/content.css"]
+        }
+    ],
+    "options_page": "options.html",
+    "icons": {
+        "48": "img/logo.png",
+        "128": "img/logo.png"
+    }
+}

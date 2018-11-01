@@ -1,0 +1,16 @@
+#popup-form{
+    width:300px;
+    height:200px;
+    text-align:center;
+    line-height:200px;
+}
+
+#popup-form, #popup-sources, #popup-no-source {display: none;}
+
+#id-page-url {
+   width: 100%; 
+}
+
+#popup {
+    display: none;
+}
